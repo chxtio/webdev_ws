@@ -1,5 +1,8 @@
 import './App.css'
 import { useState } from 'react';
+// import Button from '@mui/material/Button'; // Import MUI Button
+import { Button } from '@mui/material'; // Import MUI Button
+
 
 
 function App() {
@@ -12,7 +15,10 @@ function App() {
   return (
     <>
       <h1>🎉React🎉</h1>
-      <button onClick={handleClick}>Count is {count}</button>
+      {/* <Button variant={contained} onClick={handleClick}>Count is {count}</Button> */}
+      <Button variant="contained" color="secondary" onClick={handleClick}>
+        Count is {count}
+      </Button>
     </>
   )
 }
